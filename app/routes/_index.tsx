@@ -1,87 +1,115 @@
 import type { V2_MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
-import { Timeline } from "flowbite-react";
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "I'm Wes" },
+    { title: "I'm Wes | Home" },
     { name: "description", content: "Hello, I'm Wes. I develop stuff." },
   ];
 };
 
 export default function Index() {
   return (
-    <>
-      <div className="flex flex-col border-b-4 border-grey bg-cyan-600 p-6">
-        <h1 className="text-3xl font-bold text-white underline mx-auto mb-2">
-          Wesley LeMahieu
-        </h1>
-        <ul className="flex justify-center mt-2">
-          <li className="space-x-3">
-            <Link
-              to="https://www.linkedin.com/in/wesleylemahieu/"
-              target="_blank"
-            >
-              LinkedIn
-            </Link>
-            <Link to="https://wellfound.com/u/wesley-lemahieu" target="_blank">
-              Wellfound
-            </Link>
-            <Link to="/Wesley LeMahieu's Resume.pdf" target="_blank">
-              Resume
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <div className="p-12">
-        <Timeline>
-          <Timeline.Item>
-            <Timeline.Point />
-            <Timeline.Content>
-              <Timeline.Time>February 2022</Timeline.Time>
-              <Timeline.Title>
-                Application UI code in Tailwind CSS
-              </Timeline.Title>
-              <Timeline.Body>
-                <p>
-                  Get access to over 20+ pages including a dashboard layout,
-                  charts, kanban board, calendar, and pre-order E-commerce &
-                  Marketing pages.
-                </p>
-              </Timeline.Body>
-            </Timeline.Content>
-          </Timeline.Item>
-          <Timeline.Item>
-            <Timeline.Point />
-            <Timeline.Content>
-              <Timeline.Time>March 2022</Timeline.Time>
-              <Timeline.Title>Marketing UI design in Figma</Timeline.Title>
-              <Timeline.Body>
-                <p>
-                  All of the pages and components are first designed in Figma
-                  and we keep a parity between the two versions even as we
-                  update the project.
-                </p>
-              </Timeline.Body>
-            </Timeline.Content>
-          </Timeline.Item>
-          <Timeline.Item>
-            <Timeline.Point />
-            <Timeline.Content>
-              <Timeline.Time>April 2022</Timeline.Time>
-              <Timeline.Title>
-                E-Commerce UI code in Tailwind CSS
-              </Timeline.Title>
-              <Timeline.Body>
-                <p>
-                  Get started with dozens of web components and interactive
-                  elements built on top of Tailwind CSS.
-                </p>
-              </Timeline.Body>
-            </Timeline.Content>
-          </Timeline.Item>
-        </Timeline>
-      </div>
-    </>
+    <div className="flex flex-col justify-center text-lg max-w-screen-md mx-auto">
+      <p>
+        Hello! My name is <span className="italic">Wesley LeMahieu</span> - or{" "}
+        just <span className="italic font-bold">Wes</span> for short. I'm a 35
+        year-young software engineer married to my wonderful wife Lily. I am
+        extremely passionate about software development, have 3 beautiful pugs
+        and enjoy playing poker recreationally.
+      </p>
+
+      <p className="mt-5">
+        I primarily live in{" "}
+        <Link
+          to="https://en.wikipedia.org/wiki/Las_Vegas"
+          target="_blank"
+          className="link"
+        >
+          Las Vegas, NV
+        </Link>{" "}
+        with my wife. We also spend a lot of time in{" "}
+        <Link
+          to="https://en.wikipedia.org/wiki/Bangkok"
+          target="_blank"
+          className="link"
+        >
+          Bangkok, Thailand
+        </Link>{" "}
+        where she's originally from. My family & relatives are spread out across
+        the world in places like{" "}
+        <Link
+          to="https://en.wikipedia.org/wiki/Arizona"
+          target="_blank"
+          className="link"
+        >
+          Arizona
+        </Link>
+        ,{" "}
+        <Link
+          to="https://en.wikipedia.org/wiki/California"
+          target="_blank"
+          className="link"
+        >
+          California
+        </Link>
+        ,{" "}
+        <Link
+          to="https://en.wikipedia.org/wiki/Florida"
+          target="_blank"
+          className="link"
+        >
+          Florida
+        </Link>
+        ,{" "}
+        <Link
+          to="https://en.wikipedia.org/wiki/Minnesota"
+          target="_blank"
+          className="link"
+        >
+          Minnesota
+        </Link>
+        ,{" "}
+        <Link
+          to="https://en.wikipedia.org/wiki/Washington_(state)"
+          target="_blank"
+          className="link"
+        >
+          Washington
+        </Link>
+        ,{" "}
+        <Link
+          to="https://en.wikipedia.org/wiki/Thailand"
+          target="_blank"
+          className="link"
+        >
+          Thailand
+        </Link>
+        ,{" "}
+        <Link
+          to="https://en.wikipedia.org/wiki/United_Kingdom"
+          target="_blank"
+          className="link"
+        >
+          United Kingdom
+        </Link>{" "}
+        &{" "}
+        <Link
+          to="https://en.wikipedia.org/wiki/Wisconsin"
+          target="_blank"
+          className="link"
+        >
+          Wisconsin
+        </Link>
+        !
+      </p>
+
+      <p className="mt-5">
+        Thanks for taking an interest in my life. Please check back from time to
+        time for updates!
+      </p>
+
+      <p className="mt-5">-Wes</p>
+    </div>
   );
 }
