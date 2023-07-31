@@ -27,8 +27,8 @@ export default function Index() {
           className="link"
         >
           Las Vegas, NV
-        </Link>{" "}
-        with my wife. We also spend a lot of time in{" "}
+        </Link>
+        . My wife and I also spend a lot of time in{" "}
         <Link
           to="https://en.wikipedia.org/wiki/Bangkok"
           target="_blank"
@@ -36,8 +36,8 @@ export default function Index() {
         >
           Bangkok, Thailand
         </Link>{" "}
-        where she's originally from. My family & relatives are spread out across
-        the world in places like{" "}
+        where she's originally from. Overall my family & relatives are pretty
+        spread out across the world, living in places such as{" "}
         <Link
           to="https://en.wikipedia.org/wiki/Arizona"
           target="_blank"

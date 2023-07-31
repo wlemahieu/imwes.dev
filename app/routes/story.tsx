@@ -179,10 +179,11 @@ export default function MyStory() {
                 thousands of customers in North America.
               </p>
               <p className="mt-4">
-                I started as a tech support agent, assisting over 10,800
-                businesses & customers resolve their real-world problems
-                relating to websites & email and soon began developing software
-                to solve internal company needs.
+                I started as a tech support agent, assisting over{" "}
+                <span className="italic">10,800 businesses & customers</span>{" "}
+                resolve their real-world problems relating to websites & email
+                and soon began developing software to solve internal company
+                needs.
               </p>
               <p className="mt-4">
                 I'll always cherish my{" "}
@@ -291,8 +292,8 @@ export default function MyStory() {
                 >
                   Santa Clara University
                 </Link>{" "}
-                to pursue a degree in accounting. I ultimately decided it was
-                not for me and decided not to go.
+                to pursue a degree in accounting. I ultimately felt it was not
+                for me and decided not to go.
               </p>
             </Timeline.Body>
           </Timeline.Content>
@@ -307,8 +308,8 @@ export default function MyStory() {
                 Change was a common theme for our family. We first moved into a
                 bigger house which changed my elementary school. A few years
                 later, I would go to a different middle school than expected.
-                Then shortly after, my Mom and I moved 3 hours north where I
-                made new friends in high school.
+                After middle school, my Mom and I moved 3 hours north where I
+                made brand new friends in high school.
               </p>
             </Timeline.Body>
           </Timeline.Content>
